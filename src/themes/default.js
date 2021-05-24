@@ -34,22 +34,14 @@ const theme = createMuiTheme({
 			contrastText: '#fff',
 		},
 		text: {
-			primary: 'rgba(0, 0, 0, 0.87)',
+			primary: '#FFF',
 			secondary: 'rgba(0, 0, 0, 0.54)',
 			disabled: 'rgba(0, 0, 0, 0.38)',
 			hint: 'rgba(0, 0, 0, 0.38)',
 		},
 	},
 	typography: {
-		fontFamily: ['Open Sans', 'sans-serif'].join(','),
-		monospace: ['B612 Mono', 'monospace'].join(','),
-	},
-	overrides: {
-		MuiTableCell: {
-			head: {
-				fontWeight: 600,
-			},
-		},
+		fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
 	},
 });
 

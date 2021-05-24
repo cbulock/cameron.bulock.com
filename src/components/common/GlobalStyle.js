@@ -3,16 +3,14 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
 	body {
 		margin: 0;
-		font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 			'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-			sans-serif;
-		-webkit-font-smoothing: antialiased;
+			sans-serif;		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
-	}
 
-	code {
-		font-family: 'B612 Mono', source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+		background: #2948ff;
+		background: linear-gradient(160deg, #2948ff, #33d0ff);
+		height: 100vh;
 	}
 `;
 
