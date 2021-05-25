@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+// Disabling this under the return throws an error in the build
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
@@ -41,7 +43,6 @@ const NavLink = ({ url, title }) => {
 		  };
 
 	return (
-		// eslint-disable-next-line react/jsx-props-no-spreading
 		<SLink underline="none" {...linkProps}>
 			<Typography variant="h6">{title}</Typography>
 		</SLink>
