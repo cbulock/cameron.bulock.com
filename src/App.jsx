@@ -60,6 +60,26 @@ const App = () => (
 					...gravatarOptions,
 				})}
 			/>
+			<link
+				srcSet={`${getGravatarUrl(email, {
+					size: isMobile ? 80 : 160,
+					...gravatarOptions,
+				})},
+		${getGravatarUrl(email, {
+			size: isMobile ? 120 : 240,
+			...gravatarOptions,
+		})} 1.5x,
+		${getGravatarUrl(email, {
+			size: isMobile ? 160 : 320,
+			...gravatarOptions,
+		})} 2x`}
+				href={getGravatarUrl(email, {
+					size: isMobile ? 160 : 320,
+					...gravatarOptions,
+				})}
+				rel="preload"
+				as="image"
+			/>
 			<link rel="manifest" href="/site.webmanifest" />
 			<title>Cameron Bulock</title>
 		</Helmet>
