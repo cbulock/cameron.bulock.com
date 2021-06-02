@@ -6,10 +6,13 @@ import Link from '@material-ui/core/Link';
 
 const STitle = styled(Typography)`
 	color: ${({ theme }) => theme.palette.text.primary};
-	font-size: 3rem;
+	font-size: 1.5rem;
 	text-transform: uppercase;
 	-webkit-text-stroke: 2px;
 	-webkit-text-fill-color: transparent;
+	${({ theme }) => theme.breakpoints.up('md')} {
+		font-size: 3rem;
+	}
 `;
 
 export default () => (

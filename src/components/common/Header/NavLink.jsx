@@ -3,6 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import ListItem from '@material-ui/core/ListItem';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import { NavLink as RouterLink } from 'react-router-dom';
@@ -30,6 +31,11 @@ const SLink = styled(Link)`
 	}
 `;
 
+const STypography = styled(Typography)`
+	font-size: 1.25rem;
+	font-weight: 500;
+`;
+
 const NavLink = ({ url, title }) => {
 	const isInternal = url.startsWith('/');
 
@@ -43,9 +49,11 @@ const NavLink = ({ url, title }) => {
 		  };
 
 	return (
-		<SLink underline="none" {...linkProps}>
-			<Typography variant="h6">{title}</Typography>
-		</SLink>
+		<ListItem>
+			<SLink underline="none" {...linkProps}>
+				<STypography>{title}</STypography>
+			</SLink>
+		</ListItem>
 	);
 };
 

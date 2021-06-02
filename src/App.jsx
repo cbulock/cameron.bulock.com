@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import {
 	ThemeProvider as MuiThemeProvider,
 	StylesProvider as MuiStylesProvider,
@@ -18,8 +18,8 @@ import GlobalStyle from './components/common/GlobalStyle';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 
-import Home from './components/pages/Home';
-import NotFound from './components/pages/NotFound';
+const Home = lazy(() => import('./components/pages/Home'));
+const NotFound = lazy(() => import('./components/pages/NotFound'));
 
 const EMAIL = 'cameron@bulock.com';
 
@@ -75,14 +75,16 @@ const App = () => (
 							height="100vh"
 						>
 							<Header />
-							<Switch>
-								<Route exact path="/">
-									<Home />
-								</Route>
-								<Route>
-									<NotFound />
-								</Route>
-							</Switch>
+							<Suspense fallback={<div>Loading...</div>}>
+								<Switch>
+									<Route exact path="/">
+										<Home />
+									</Route>
+									<Route>
+										<NotFound />
+									</Route>
+								</Switch>
+							</Suspense>
 							<Footer />
 						</Box>
 					</Router>

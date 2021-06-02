@@ -4,9 +4,14 @@ import Gravatar from 'react-awesome-gravatar';
 import gravatarOptions from 'configs/gravatarOptions';
 
 const Image = styled.img`
-	width: 10rem;
-	height: 10rem;
-	border-radius: 5rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 2.5rem;
+	${({ theme }) => theme.breakpoints.up('md')} {
+		width: 10rem;
+		height: 10rem;
+		border-radius: 5rem;
+	}
 `;
 
 export default () => (
