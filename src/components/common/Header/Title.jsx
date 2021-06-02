@@ -17,7 +17,7 @@ const STitle = styled(Typography)`
 
 export default () => (
 	<Box ml={2}>
-		<Link to="/" underline="none">
+		<Link href="/" underline="none">
 			<STitle variant="h1">Cameron Bulock</STitle>
 		</Link>
 	</Box>

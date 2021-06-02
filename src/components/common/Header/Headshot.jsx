@@ -1,7 +1,10 @@
 import React from 'react';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import styled from 'styled-components';
-import Gravatar from 'react-awesome-gravatar';
+import { getGravatarUrl } from 'react-awesome-gravatar';
 import gravatarOptions from 'configs/gravatarOptions';
+
+import email from 'configs/email';
 
 const Image = styled.img`
 	width: 5rem;
@@ -14,11 +17,29 @@ const Image = styled.img`
 	}
 `;
 
-export default () => (
-	<Gravatar
-		email="cameron@bulock.com"
-		options={{ size: 500, ...gravatarOptions }}
-	>
-		{(url) => <Image src={url} alt="Cameron headshot" />}
-	</Gravatar>
-);
+export default () => {
+	const isMobile = useMediaQuery((theme) => theme.breakpoints.down('md'));
+
+	return (
+		<Image
+			srcSet={`${getGravatarUrl(email, {
+				size: isMobile ? 80 : 160,
+				...gravatarOptions,
+			})},
+		${getGravatarUrl(email, {
+			size: isMobile ? 120 : 240,
+			...gravatarOptions,
+		})} 1.5x,
+		${getGravatarUrl(email, {
+			size: isMobile ? 160 : 320,
+			...gravatarOptions,
+		})} 2x`}
+			src={getGravatarUrl(email, {
+				size: isMobile ? 160 : 320,
+				...gravatarOptions,
+			})}
+			rel="preconnect"
+			alt="Cameron headshot"
+		/>
+	);
+};

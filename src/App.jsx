@@ -12,6 +12,8 @@ import Box from '@material-ui/core/Box';
 import { getGravatarUrl } from 'react-awesome-gravatar';
 import gravatarOptions from 'configs/gravatarOptions';
 
+import email from 'configs/email';
+
 import theme from './themes/default';
 import GlobalStyle from './components/common/GlobalStyle';
 
@@ -20,8 +22,6 @@ import Footer from './components/common/Footer';
 
 const Home = lazy(() => import('./components/pages/Home'));
 const NotFound = lazy(() => import('./components/pages/NotFound'));
-
-const EMAIL = 'cameron@bulock.com';
 
 const App = () => (
 	<>
@@ -37,7 +37,7 @@ const App = () => (
 			<link
 				rel="apple-touch-icon"
 				sizes="180x180"
-				href={getGravatarUrl(EMAIL, {
+				href={getGravatarUrl(email, {
 					size: 180,
 					...gravatarOptions,
 				})}
@@ -46,7 +46,7 @@ const App = () => (
 				rel="icon"
 				type="image/png"
 				sizes="32x32"
-				href={getGravatarUrl(EMAIL, {
+				href={getGravatarUrl(email, {
 					size: 32,
 					...gravatarOptions,
 				})}
@@ -55,7 +55,7 @@ const App = () => (
 				rel="icon"
 				type="image/png"
 				sizes="16x16"
-				href={getGravatarUrl(EMAIL, {
+				href={getGravatarUrl(email, {
 					size: 16,
 					...gravatarOptions,
 				})}
