@@ -38,7 +38,7 @@ export default () => {
 				size: isMobile ? 160 : 320,
 				...gravatarOptions,
 			})}
-			rel="preconnect preload"
+			rel="preconnect"
 			alt="Cameron headshot"
 		/>
 	);
