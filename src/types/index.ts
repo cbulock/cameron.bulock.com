@@ -12,6 +12,8 @@ export interface IHeroProps {
 export interface IExperience {
   name: string;
   location: string;
+  jobTitle: string;
+  degree: string;
   startDate: string;
   endDate: string;
   description: string[];
