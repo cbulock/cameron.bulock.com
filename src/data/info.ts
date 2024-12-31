@@ -1,96 +1,65 @@
 export const info = {
-  baseUrl: "https://astro-portfolio-uzair.vercel.app",
-  name: "Uzair Ahmed",
-  jobDescription: "Web Developer",
-  about: `I'm a software engineer based in Karachi, Pakistan.
-   I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
-   I have been working for 3 year, with a demonstrated history of working in the Computer Software industry. Skilled in Front-end Development.
-   I have 3 years of experience in HTML, CSS, SCSS, JavaScript, Bootstrap, tailwind CSS, StyledComponent, React JS and Next JS. Hence,
-   I have successfully completed several web projects from scratch. 
-   Yet, I learn continuously and never stop exploring new technologies.
-   So, I have also gained knowledge of Node JS, Express JS, Mongo DB, Python,
-   firebase and React Native with time.
-  `,
+  baseUrl: "https://cameron.bulock.com",
+  name: "Cameron Bulock",
+  jobDescription: "Application Architect",
+  about: ``,
 
   experience: [
     {
-      name: "InterNative Labs, LLC",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "Apr 2022",
+      name: "Quavo Fraud & Disputes",
+      jobTitle: "Application Architect",
+      location: "Remote",
+      startDate: "Dec 2021",
       endDate: "Present",
       description: [
-        "- Developing screens and UI components for the web application using React and Tailwind.",
-        "- Fixing UI issues and integrating backend APIs with Redux Saga.",
+        "Designed and built web applications, with a focus on frontend development using Vue.js and modern JavaScript.",
+        "Developed reusable UI components library, ensuring consistency and efficiency.",
+        "Partnered with cross-functional teams to deliver high-quality software solutions.",
+        "Resolved complex issues, including integration challenges and styling inconsistencies.",
+        "Applied industry standards like responsive design, linting, and code reviews for maintainable and scalable code.",
       ],
     },
 
     {
-      name: "Coupon Approve (Remote)",
-      location: "Amsterdam, North Holland, Netherlands",
-      startDate: "Nov 2020",
-      endDate: "Apr 2022",
+      name: "Liquid Web",
+      jobTitle: "Senior Frontend Developer",
+      location: "Lansing, Michigan",
+      startDate: "Dec 2017",
+      endDate: "Dec 2021",
       description: [
-        "✓ Developing code in accordance with appropriate design and architectural rules",
-        "✓ Documenting, testing, deployment, maintenance, support of platforms, applications, databases and solutions",
-        "✓ Help and training of other colleagues",
-        "✓ Others tasks connected to the nature of the job",
-        "✓ Code Improvements and Refactoring ",
-        "✓ Best Practices and Rules Maintainer",
-      ],
-    },
-
-    {
-      name: "Interns Pakistan",
-      location: "Pakistan",
-      startDate: "Oct 2020",
-      endDate: "Nov 2020",
-      description: [
-        "An Immersive Internship Program that prepares me for the world's most in-demand career. A six weeks program completely based on learning and challenges.",
-        "The internship track is built by an industry expert that let develop the skills in the areas most important ",
+        "Played a key role in building a React-based customer portal for a web hosting service, streamlining account management and improving the user experience.",
+        "Focused on delivering scalable, high-performance features tailored to customer needs.",
+        "Enhanced application capabilities by integrating various APIs and third-party services.",
+        "Contributed to an agile team environment, ensuring alignment with project goals and deadlines.",
+        "Diagnosed and resolved complex issues in production, ensuring reliable performance for end-users.",
       ],
     },
   ],
 
   education: [
     {
-      name: "Pakistan Institute of Professional Science & Technology (PIPS-TECH)",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2019",
-      endDate: "2022",
-      description: [
-        "Diploma of Associate Engineering,  Computer Information Technology (CIT)",
-      ],
-    },
-    {
-      name: "Govt. Degree Boys College Buffer Zone",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2018",
-      endDate: "2020",
-      description: ["Intermediate, Pre-Engineering"],
-    },
-    {
-      name: "Ghazi Foundation Schools & Colleges",
-      location: "Karāchi, Sindh, Pakistan",
-      startDate: "2016",
-      endDate: "2018",
-      description: ["Matriculation,  Computer Science"],
+      name: "ITT Technical Institute",
+      degree: "Associate of Applied Science, Computer Network Systems",
+      location: "Grand Rapids, Michigan",
+      startDate: "2000",
+      endDate: "2002",
+      description: [""],
     },
   ],
 
   socialMedia: {
-    facebook: "https://www.facebook.com/profile.php?id=100022899849583",
-    twitter: "https://twitter.com/Uzzii_21",
-    github: "https://github.com/uzzii-21",
-    email: "mailto:uzairahmed@74372gmail.com",
-    linkedin: "https://www.linkedin.com/in/uzzii21/",
+    facebook: "https://www.facebook.com/cbulock",
+    github: "https://github.com/cbulock",
+    email: "mailto:cameron@bulock.com",
+    linkedin: "https://www.linkedin.com/in/cbulock/",
   },
 
   projects: [
     {
-      title: "Astro Portfolio",
+      title: "Test",
       isFeatured: true,
       thumbnail: "/assets/images/astro-portfolio.png",
-      githubUrl: "https://github.com/uzzii-21/astro-portfolio",
+      githubUrl: "https://github.com/cbulock",
       liveUrl: "https://astro-portfolio-uzair.vercel.app/",
     },
   ],
